@@ -58,7 +58,7 @@ class ProductController extends Controller
 
     public function delete($id)
     {
-        print_r("iiuuu"); exit;
+        // print_r("iiuuu"); exit;
         $product = Product::find($id);
         $product->delete();
         return redirect()->route('products.index')->with('success', 'Product deleted successfully.');
